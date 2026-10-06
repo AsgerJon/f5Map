@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "f5map",
+  "version": "${version}",
+  "name": "f5Map",
+  "description": "Keeps the small one-handed map view visible in third person, drawn exactly as vanilla draws it in first person.",
+  "authors": [
+    "AsgerJon"
+  ],
+  "license": "Apache-2.0",
+  "icon": "assets/f5map/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "io.github.asgerjon.f5map.F5MapClient"
+    ],
+    "modmenu": [
+      "io.github.asgerjon.f5map.F5MapModMenu"
+    ]
+  },
+  "mixins": [
+    "f5map.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.5",
+    "minecraft": "~26.3",
+    "java": ">=25"
+  },
+  "suggests": {
+    "modmenu": "*"
+  }
+}

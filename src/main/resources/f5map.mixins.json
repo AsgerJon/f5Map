@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "package": "io.github.asgerjon.f5map.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "client": [
+    "FirstPersonHandsAndItemsMixin",
+    "GameRendererMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}
